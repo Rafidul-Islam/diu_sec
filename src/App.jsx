@@ -7,6 +7,7 @@ import WingPage from "./pages/WingPage";
 import NotFound from "./pages/NotFound";
 import { RegistrationForm } from "./pages/RegistrationForm";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function AppContent() {
   //
@@ -24,8 +25,8 @@ function AppContent() {
         </Routes>
       </main>
       <Footer />
-
       <Analytics></Analytics>
+      <SpeedInsights></SpeedInsights>
     </div>
   );
 }
