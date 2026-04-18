@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { ThemeProvider, useTheme } from "./context/ThemeContext";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import Home from "./pages/Home";
@@ -7,15 +6,14 @@ import Magazine from "./pages/Magazine";
 import WingPage from "./pages/WingPage";
 import NotFound from "./pages/NotFound";
 import { RegistrationForm } from "./pages/RegistrationForm";
+import { Analytics } from "@vercel/analytics/next";
 
 function AppContent() {
-  const { theme, toggleTheme } = useTheme();
+  //
 
   return (
-    <div
-      className={`${theme === "dark" ? "dark" : ""} bg-white dark:bg-slate-950`}
-    >
-      <Navbar mode={theme} setMode={toggleTheme} />
+    <div className={` bg-white dark:bg-slate-950`}>
+      <Navbar />
       <main className="bg-white dark:bg-slate-950">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -26,17 +24,17 @@ function AppContent() {
         </Routes>
       </main>
       <Footer />
+
+      <Analytics></Analytics>
     </div>
   );
 }
 
 function App() {
   return (
-    <ThemeProvider>
-      <Router>
-        <AppContent />
-      </Router>
-    </ThemeProvider>
+    <Router>
+      <AppContent />
+    </Router>
   );
 }
 
