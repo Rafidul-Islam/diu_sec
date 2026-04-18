@@ -6,7 +6,7 @@ import Magazine from "./pages/Magazine";
 import WingPage from "./pages/WingPage";
 import NotFound from "./pages/NotFound";
 import { RegistrationForm } from "./pages/RegistrationForm";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 
 function AppContent() {
   //
