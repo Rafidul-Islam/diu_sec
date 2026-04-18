@@ -151,25 +151,25 @@ export const wings = [
 
 export const recentActivities = [
   {
-    title: "Launch Workshop: Campus Dev Sprint",
+    title: "Career Planning Roadmap Seminar",
     description:
-      "A hands-on sprint for students to prototype campus solutions in one weekend.",
+      "A day-long seminar on Career maping For the students under the Art Of Living Course.",
     date: "April 2026",
-    image: "/assets/activity-1.jpg",
+    image: "latest-1.jpg",
   },
   {
-    title: "Magazine Editorial Lab",
+    title: "Biggest Iftar Mahfil on Campus",
     description:
-      "Editorial team collaborated on articles, case studies, and engineering insights.",
+      "The DIU Software Engineering Club warmly congratulates all the graduates of Daffodil International University on the occasion of its 13th Convocation.",
     date: "March 2026",
-    image: "/assets/activity-2.jpg",
+    image: "iftar.jpg",
   },
   {
-    title: "AI Symposium Series",
+    title: "Covocation 2026",
     description:
-      "Student speakers explored ethics, model deployment, and intelligent systems design.",
-    date: "February 2026",
-    image: "/assets/activity-3.jpg",
+      "The DIU Software Engineering Club warmly congratulates all the graduates of Daffodil International University on the occasion of its 13th Convocation.",
+    date: "January 2026",
+    image: "convo.jpg",
   },
 ];
 

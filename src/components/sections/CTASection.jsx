@@ -20,8 +20,8 @@ export default function CTASection() {
           </p>
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
-              to="/magazine"
-              className="inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-base font-semibold text-black transition hover:bg-slate-100"
+              to="/registration-form"
+              className="inline-flex items-center justify-center rounded-full bg-white !text-black px-8 py-3 text-base font-semibold transition hover:bg-slate-200"
             >
               Apply Now
             </Link>

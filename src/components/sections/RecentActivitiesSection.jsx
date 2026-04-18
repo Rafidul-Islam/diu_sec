@@ -20,15 +20,13 @@ export default function RecentActivitiesSection() {
             key={activity.title}
             className="overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white shadow-soft transition hover:-translate-y-1 dark:border-slate-700/80 dark:bg-slate-900"
           >
-            <div
-              className={`h-52 rounded-t-[2rem] ${
-                index % 3 === 0
-                  ? "bg-gradient-to-br from-sky-500 to-blue-500"
-                  : index % 3 === 1
-                    ? "bg-gradient-to-br from-cyan-500 to-slate-800"
-                    : "bg-gradient-to-br from-indigo-500 to-slate-700"
-              }`}
-            />
+            <div>
+              <img
+                className="w-full h-52 object-cover"
+                src={activity.image}
+                alt=""
+              />
+            </div>
             <div className="space-y-4 p-6">
               <p className="text-sm uppercase tracking-[0.3em] text-sky-600 dark:text-sky-400">
                 {activity.date}

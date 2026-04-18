@@ -8,37 +8,71 @@ import {
   FiLayers,
   FiLayout,
 } from "react-icons/fi";
-
+// const DEFAULT_ITEMS = [
+//   {
+//     title: "Who We Are",
+//     description:
+//       "A community of passionate students learning, building, and growing together in the field of software engineering.",
+//     id: 1,
+//     icon: <FiFileText className="h-[16px] w-[16px] text-white" />,
+//   },
+//   {
+//     title: "Our Wings",
+//     description:
+//       "Our club is divided into multiple specialized wings that collaborate on development, design, research, and creative projects.",
+//     id: 2,
+//     icon: <FiCircle className="h-[16px] w-[16px] text-white" />,
+//   },
+//   {
+//     title: "What We Do",
+//     description:
+//       "We organize workshops, hackathons, and team projects to help members gain real-world skills and hands-on experience.",
+//     id: 3,
+//     icon: <FiLayers className="h-[16px] w-[16px] text-white" />,
+//   },
+//   {
+//     title: "Our Vision",
+//     description:
+//       "Our vision is to build a strong tech community that inspires innovation and prepares students for future careers.",
+//     id: 4,
+//     icon: <FiLayout className="h-[16px] w-[16px] text-white" />,
+//   },
+// ];
 const DEFAULT_ITEMS = [
   {
-    title: "Text Animations",
-    description: "Cool text animations for your projects.",
+    title: "Who We Are",
+    description:
+      "A community of passionate students learning, building, and growing together in the field of software engineering.",
+    bgImage: "/grp-1.jpg",
     id: 1,
     icon: <FiFileText className="h-[16px] w-[16px] text-white" />,
   },
   {
-    title: "Animations",
-    description: "Smooth animations for your projects.",
+    title: "Our Wings",
+    description:
+      "Our club is divided into multiple specialized wings that collaborate on development, design, research, and creative projects.",
+    bgImage: "/grp-2.jpg",
+
     id: 2,
     icon: <FiCircle className="h-[16px] w-[16px] text-white" />,
   },
   {
-    title: "Components",
-    description: "Reusable components for your projects.",
+    title: "What We Do",
+    description:
+      "We organize workshops, hackathons, and team projects to help members gain real-world skills and hands-on experience.",
+    bgImage: "/grp-2.jpg",
+
     id: 3,
     icon: <FiLayers className="h-[16px] w-[16px] text-white" />,
   },
   {
-    title: "Backgrounds",
-    description: "Beautiful backgrounds and patterns for your projects.",
+    title: "Our Vision",
+    description:
+      "Our vision is to build a strong tech community that inspires innovation and prepares students for future careers.",
+    bgImage: "/grp-2.jpg",
+
     id: 4,
     icon: <FiLayout className="h-[16px] w-[16px] text-white" />,
-  },
-  {
-    title: "Common UI",
-    description: "Common UI components are coming soon!",
-    id: 5,
-    icon: <FiCode className="h-[16px] w-[16px] text-white" />,
   },
 ];
 
@@ -65,27 +99,82 @@ function CarouselItem({
   const rotateY = useTransform(x, range, outputRange, { clamp: false });
 
   return (
+    // <motion.div
+    //   key={`${item?.id ?? index}-${index}`}
+    //   className={`relative shrink-0 flex flex-col ${
+    //     round
+    //       ? "items-center justify-center text-center bg-[#120F17] border-0"
+    //       : "items-start justify-between bg-[#222] border border-[#222] rounded-[12px]"
+    //   } overflow-hidden cursor-grab active:cursor-grabbing`}
+    //   style={{
+    //     width: itemWidth,
+    //     height: round ? itemWidth : "100%",
+    //     rotateY: rotateY,
+    //     ...(round && { borderRadius: "50%" }),
+    //   }}
+    //   transition={transition}
+    // >
+    // <motion.div
+    //   key={`${item?.id ?? index}-${index}`}
+    //   className={`relative shrink-0 flex flex-col ${
+    //     round
+    //       ? "items-center justify-center text-center border-0"
+    //       : "items-start justify-between border border-[#222] rounded-[12px]"
+    //   } overflow-hidden cursor-grab active:cursor-grabbing bg-cover bg-center`}
+    //   style={{
+    //     width: itemWidth,
+    //     height: round ? itemWidth : "100%",
+    //     rotateY: rotateY,
+
+    //     // 🔥 Background Image Here
+    //     backgroundImage: item.bgImage ? `url(${item.bgImage})` : "none",
+
+    //     ...(round && { borderRadius: "50%" }),
+    //   }}
+    //   transition={transition}
+    // >
+    //   <div className="absolute inset-0 bg-black/60 z-0" />
+
+    //   <div className={`${round ? "p-0 m-0" : "mb-4 p-5"}`}>
+    //     <span className="flex h-[28px] w-[28px] items-center justify-center rounded-full bg-[#120F17]">
+    //       {item.icon}
+    //     </span>
+    //   </div>
+    //   <div className="p-5">
+    //     <div className="mb-1 font-black text-lg text-white">{item.title}</div>
+    //     <p className="text-sm text-white">{item.description}</p>
+    //   </div>
+    // </motion.div>
     <motion.div
       key={`${item?.id ?? index}-${index}`}
       className={`relative shrink-0 flex flex-col ${
         round
-          ? "items-center justify-center text-center bg-[#120F17] border-0"
-          : "items-start justify-between bg-[#222] border border-[#222] rounded-[12px]"
-      } overflow-hidden cursor-grab active:cursor-grabbing`}
+          ? "items-center justify-center text-center border-0"
+          : "items-start justify-between border border-[#222] rounded-[12px]"
+      } overflow-hidden cursor-grab active:cursor-grabbing bg-cover bg-center`}
       style={{
         width: itemWidth,
         height: round ? itemWidth : "100%",
         rotateY: rotateY,
+
+        backgroundImage: item.bgImage ? `url(${item.bgImage})` : "none",
+
         ...(round && { borderRadius: "50%" }),
       }}
       transition={transition}
     >
-      <div className={`${round ? "p-0 m-0" : "mb-4 p-5"}`}>
+      {/* Overlay (correct) */}
+      <div className="absolute inset-0 bg-black/60 z-0" />
+
+      {/* Icon */}
+      <div className={`${round ? "p-0 m-0" : "mb-4 p-5"} relative z-10`}>
         <span className="flex h-[28px] w-[28px] items-center justify-center rounded-full bg-[#120F17]">
           {item.icon}
         </span>
       </div>
-      <div className="p-5">
+
+      {/* Content */}
+      <div className="p-5 relative z-10">
         <div className="mb-1 font-black text-lg text-white">{item.title}</div>
         <p className="text-sm text-white">{item.description}</p>
       </div>
