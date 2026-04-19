@@ -233,23 +233,32 @@ export const wingDetails = {
         position: "Program Organization Secretary",
         batch: "Batch 2022",
         role: "Wing Head",
-        email: "example@email.com",
+        email: "rufayed@email.com",
+        profileUrl: "https://example.com/profiles/rufayed-islam",
       },
-
       {
-        name: "Member Name 1",
+        name: "Tasnia Ferdous",
         position: "Executive Member",
         batch: "Batch 2023",
         role: "Event Coordinator",
-        email: "member1@email.com",
+        email: "tasnia@email.com",
+        profileUrl: "https://example.com/profiles/tasnia-ferdous",
       },
-
       {
-        name: "Member Name 2",
+        name: "Ariful Hasan",
         position: "Executive Member",
         batch: "Batch 2023",
         role: "Logistics Support",
-        email: "member2@email.com",
+        email: "ariful@email.com",
+        profileUrl: "https://example.com/profiles/ariful-hasan",
+      },
+      {
+        name: "Nusrat Jahan",
+        position: "Executive Member",
+        batch: "Batch 2024",
+        role: "Communications Officer",
+        email: "nusrat@email.com",
+        profileUrl: "https://example.com/profiles/nusrat-jahan",
       },
     ],
   },
@@ -269,10 +278,28 @@ export const wingDetails = {
 
     members: [
       {
-        name: "Name Here",
+        name: "Sabbir Ahmed",
         position: "Secretary",
-        batch: "Batch XXXX",
+        batch: "Batch 2022",
         role: "Administration Lead",
+        email: "sabbir@email.com",
+        profileUrl: "https://example.com/profiles/sabbir-ahmed",
+      },
+      {
+        name: "Mahfuza Akter",
+        position: "Executive Member",
+        batch: "Batch 2023",
+        role: "Documentation Officer",
+        email: "mahfuza@email.com",
+        profileUrl: "https://example.com/profiles/mahfuza-akter",
+      },
+      {
+        name: "Rakibul Islam",
+        position: "Executive Member",
+        batch: "Batch 2023",
+        role: "Records Manager",
+        email: "rakibul@email.com",
+        profileUrl: "https://example.com/profiles/rakibul-islam",
       },
     ],
   },
@@ -290,7 +317,32 @@ export const wingDetails = {
       "Support Activities",
     ],
 
-    members: [],
+    members: [
+      {
+        name: "Fahmida Hossain",
+        position: "Secretary",
+        batch: "Batch 2022",
+        role: "Wing Head",
+        email: "fahmida@email.com",
+        profileUrl: "https://example.com/profiles/fahmida-hossain",
+      },
+      {
+        name: "Tanvir Rahman",
+        position: "Executive Member",
+        batch: "Batch 2023",
+        role: "Student Counselor",
+        email: "tanvir@email.com",
+        profileUrl: "https://example.com/profiles/tanvir-rahman",
+      },
+      {
+        name: "Sumaiya Khanam",
+        position: "Executive Member",
+        batch: "Batch 2024",
+        role: "Welfare Coordinator",
+        email: "sumaiya@email.com",
+        profileUrl: "https://example.com/profiles/sumaiya-khanam",
+      },
+    ],
   },
 
   "media-press": {
@@ -306,7 +358,40 @@ export const wingDetails = {
       "Social Media Coverage",
     ],
 
-    members: [],
+    members: [
+      {
+        name: "Imran Hossain",
+        position: "Secretary",
+        batch: "Batch 2022",
+        role: "Wing Head",
+        email: "imran@email.com",
+        profileUrl: "https://example.com/profiles/imran-hossain",
+      },
+      {
+        name: "Sanjida Islam",
+        position: "Executive Member",
+        batch: "Batch 2023",
+        role: "Lead Photographer",
+        email: "sanjida@email.com",
+        profileUrl: "https://example.com/profiles/sanjida-islam",
+      },
+      {
+        name: "Rezaul Karim",
+        position: "Executive Member",
+        batch: "Batch 2023",
+        role: "Videographer",
+        email: "rezaul@email.com",
+        profileUrl: "https://example.com/profiles/rezaul-karim",
+      },
+      {
+        name: "Tanha Akter",
+        position: "Executive Member",
+        batch: "Batch 2024",
+        role: "Social Media Manager",
+        email: "tanha@email.com",
+        profileUrl: "https://example.com/profiles/tanha-akter",
+      },
+    ],
   },
 
   "public-relations": {
@@ -321,7 +406,32 @@ export const wingDetails = {
       "Partnership Programs",
     ],
 
-    members: [],
+    members: [
+      {
+        name: "Zahidul Islam",
+        position: "Secretary",
+        batch: "Batch 2022",
+        role: "Wing Head",
+        email: "zahidul@email.com",
+        profileUrl: "https://example.com/profiles/zahidul-islam",
+      },
+      {
+        name: "Anika Sultana",
+        position: "Executive Member",
+        batch: "Batch 2023",
+        role: "Outreach Coordinator",
+        email: "anika@email.com",
+        profileUrl: "https://example.com/profiles/anika-sultana",
+      },
+      {
+        name: "Mehedi Hasan",
+        position: "Executive Member",
+        batch: "Batch 2023",
+        role: "Partnership Manager",
+        email: "mehedi@email.com",
+        profileUrl: "https://example.com/profiles/mehedi-hasan",
+      },
+    ],
   },
 
   "women-welfare": {
@@ -336,7 +446,32 @@ export const wingDetails = {
       "Community Support Programs",
     ],
 
-    members: [],
+    members: [
+      {
+        name: "Sharmin Akter",
+        position: "Secretary",
+        batch: "Batch 2022",
+        role: "Wing Head",
+        email: "sharmin@email.com",
+        profileUrl: "https://example.com/profiles/sharmin-akter",
+      },
+      {
+        name: "Nafisa Tabassum",
+        position: "Executive Member",
+        batch: "Batch 2023",
+        role: "Mentorship Coordinator",
+        email: "nafisa@email.com",
+        profileUrl: "https://example.com/profiles/nafisa-tabassum",
+      },
+      {
+        name: "Bristy Roy",
+        position: "Executive Member",
+        batch: "Batch 2024",
+        role: "Campaign Organizer",
+        email: "bristy@email.com",
+        profileUrl: "https://example.com/profiles/bristy-roy",
+      },
+    ],
   },
 
   "international-relations": {
@@ -351,7 +486,32 @@ export const wingDetails = {
       "Exchange Programs",
     ],
 
-    members: [],
+    members: [
+      {
+        name: "Faisal Mahmud",
+        position: "Secretary",
+        batch: "Batch 2022",
+        role: "Wing Head",
+        email: "faisal@email.com",
+        profileUrl: "https://example.com/profiles/faisal-mahmud",
+      },
+      {
+        name: "Ishrat Jahan",
+        position: "Executive Member",
+        batch: "Batch 2023",
+        role: "Global Liaison",
+        email: "ishrat@email.com",
+        profileUrl: "https://example.com/profiles/ishrat-jahan",
+      },
+      {
+        name: "Habibur Rahman",
+        position: "Executive Member",
+        batch: "Batch 2023",
+        role: "Exchange Program Lead",
+        email: "habibur@email.com",
+        profileUrl: "https://example.com/profiles/habibur-rahman",
+      },
+    ],
   },
 
   acm: {
@@ -367,7 +527,40 @@ export const wingDetails = {
       "Problem Solving Sessions",
     ],
 
-    members: [],
+    members: [
+      {
+        name: "Shahriar Kabir",
+        position: "Secretary",
+        batch: "Batch 2022",
+        role: "Wing Head",
+        email: "shahriar@email.com",
+        profileUrl: "https://example.com/profiles/shahriar-kabir",
+      },
+      {
+        name: "Asif Iqbal",
+        position: "Executive Member",
+        batch: "Batch 2023",
+        role: "Contest Organizer",
+        email: "asif@email.com",
+        profileUrl: "https://example.com/profiles/asif-iqbal",
+      },
+      {
+        name: "Lamia Hasan",
+        position: "Executive Member",
+        batch: "Batch 2023",
+        role: "Workshop Facilitator",
+        email: "lamia@email.com",
+        profileUrl: "https://example.com/profiles/lamia-hasan",
+      },
+      {
+        name: "Nahid Hassan",
+        position: "Executive Member",
+        batch: "Batch 2024",
+        role: "Problem Setter",
+        email: "nahid@email.com",
+        profileUrl: "https://example.com/profiles/nahid-hassan",
+      },
+    ],
   },
 
   design: {
@@ -378,7 +571,40 @@ export const wingDetails = {
 
     projects: ["Poster Design", "Brand Identity", "UI Design Assets"],
 
-    members: [],
+    members: [
+      {
+        name: "Rabeya Khatun",
+        position: "Secretary",
+        batch: "Batch 2022",
+        role: "Wing Head",
+        email: "rabeya@email.com",
+        profileUrl: "https://example.com/profiles/rabeya-khatun",
+      },
+      {
+        name: "Sakib Al Hasan",
+        position: "Executive Member",
+        batch: "Batch 2023",
+        role: "UI/UX Designer",
+        email: "sakib@email.com",
+        profileUrl: "https://example.com/profiles/sakib-al-hasan",
+      },
+      {
+        name: "Mitu Akter",
+        position: "Executive Member",
+        batch: "Batch 2023",
+        role: "Graphic Designer",
+        email: "mitu@email.com",
+        profileUrl: "https://example.com/profiles/mitu-akter",
+      },
+      {
+        name: "Rifat Hossain",
+        position: "Executive Member",
+        batch: "Batch 2024",
+        role: "Brand Designer",
+        email: "rifat@email.com",
+        profileUrl: "https://example.com/profiles/rifat-hossain",
+      },
+    ],
   },
 
   development: {
@@ -389,7 +615,40 @@ export const wingDetails = {
 
     projects: ["Club Website", "Magazine Platform", "Admin Dashboard"],
 
-    members: [],
+    members: [
+      {
+        name: "Shuvo Sarker",
+        position: "Secretary",
+        batch: "Batch 2022",
+        role: "Wing Head",
+        email: "shuvo@email.com",
+        profileUrl: "https://example.com/profiles/shuvo-sarker",
+      },
+      {
+        name: "Jannatul Ferdous",
+        position: "Executive Member",
+        batch: "Batch 2023",
+        role: "Frontend Developer",
+        email: "jannatul@email.com",
+        profileUrl: "https://example.com/profiles/jannatul-ferdous",
+      },
+      {
+        name: "Nazmul Huda",
+        position: "Executive Member",
+        batch: "Batch 2023",
+        role: "Backend Developer",
+        email: "nazmul@email.com",
+        profileUrl: "https://example.com/profiles/nazmul-huda",
+      },
+      {
+        name: "Puja Dey",
+        position: "Executive Member",
+        batch: "Batch 2024",
+        role: "Full Stack Developer",
+        email: "puja@email.com",
+        profileUrl: "https://example.com/profiles/puja-dey",
+      },
+    ],
   },
 
   "research-publication": {
@@ -400,7 +659,32 @@ export const wingDetails = {
 
     projects: ["Research Papers", "Magazine Publication", "Technical Reports"],
 
-    members: [],
+    members: [
+      {
+        name: "Dr. Aminul Islam",
+        position: "Secretary",
+        batch: "Batch 2021",
+        role: "Wing Head",
+        email: "aminul@email.com",
+        profileUrl: "https://example.com/profiles/aminul-islam",
+      },
+      {
+        name: "Shanta Biswas",
+        position: "Executive Member",
+        batch: "Batch 2022",
+        role: "Research Lead",
+        email: "shanta@email.com",
+        profileUrl: "https://example.com/profiles/shanta-biswas",
+      },
+      {
+        name: "Mizanur Rahman",
+        position: "Executive Member",
+        batch: "Batch 2023",
+        role: "Publication Editor",
+        email: "mizan@email.com",
+        profileUrl: "https://example.com/profiles/mizanur-rahman",
+      },
+    ],
   },
 
   sports: {
@@ -410,7 +694,40 @@ export const wingDetails = {
 
     projects: ["Sports Tournament", "Friendly Matches", "Annual Sports Day"],
 
-    members: [],
+    members: [
+      {
+        name: "Jubayer Ahmed",
+        position: "Secretary",
+        batch: "Batch 2022",
+        role: "Wing Head",
+        email: "jubayer@email.com",
+        profileUrl: "https://example.com/profiles/jubayer-ahmed",
+      },
+      {
+        name: "Riyad Hossain",
+        position: "Executive Member",
+        batch: "Batch 2023",
+        role: "Tournament Coordinator",
+        email: "riyad@email.com",
+        profileUrl: "https://example.com/profiles/riyad-hossain",
+      },
+      {
+        name: "Mukta Rani",
+        position: "Executive Member",
+        batch: "Batch 2023",
+        role: "Fitness Organizer",
+        email: "mukta@email.com",
+        profileUrl: "https://example.com/profiles/mukta-rani",
+      },
+      {
+        name: "Shihab Uddin",
+        position: "Executive Member",
+        batch: "Batch 2024",
+        role: "Event Marshal",
+        email: "shihab@email.com",
+        profileUrl: "https://example.com/profiles/shihab-uddin",
+      },
+    ],
   },
 
   cultural: {
@@ -420,6 +737,39 @@ export const wingDetails = {
 
     projects: ["Cultural Night", "Talent Show", "Festival Events"],
 
-    members: [],
+    members: [
+      {
+        name: "Morshed Alam",
+        position: "Secretary",
+        batch: "Batch 2022",
+        role: "Wing Head",
+        email: "morshed@email.com",
+        profileUrl: "https://example.com/profiles/morshed-alam",
+      },
+      {
+        name: "Tania Sultana",
+        position: "Executive Member",
+        batch: "Batch 2023",
+        role: "Performance Director",
+        email: "tania@email.com",
+        profileUrl: "https://example.com/profiles/tania-sultana",
+      },
+      {
+        name: "Emon Das",
+        position: "Executive Member",
+        batch: "Batch 2023",
+        role: "Event Host",
+        email: "emon@email.com",
+        profileUrl: "https://example.com/profiles/emon-das",
+      },
+      {
+        name: "Priya Chakraborty",
+        position: "Executive Member",
+        batch: "Batch 2024",
+        role: "Talent Coordinator",
+        email: "priya@email.com",
+        profileUrl: "https://example.com/profiles/priya-chakraborty",
+      },
+    ],
   },
 };

@@ -19,7 +19,6 @@ export default function Footer() {
                 <p className="text-sm uppercase tracking-[0.3em] text-sky-300">
                   Software Engineering Club
                 </p>
-                <p className="font-semibold">University Tech Society</p>
               </div>
             </div>
             <p className="text-sm leading-6 text-slate-400">
@@ -92,7 +91,9 @@ export default function Footer() {
         <div className="text-sm text-slate-500">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <p>
-              © 2026 Software Engineering Club · University Tech Society
+              © 2026 Software Engineering Club
+              <span className="hidden sm:inline"> • </span>
+              Daffodil International University
               <br className="sm:hidden" />
               <span className="hidden sm:inline"> • </span>
               <br className="sm:hidden" />
@@ -103,14 +104,26 @@ export default function Footer() {
             </p>
 
             <div className="flex flex-wrap gap-4 text-slate-400">
-              <a href="#" className="transition hover:text-white">
+              <a
+                href="https://www.linkedin.com/company/diusec/"
+                className="transition hover:text-white"
+                target="blank"
+              >
                 LinkedIn
               </a>
-              <a href="#" className="transition hover:text-white">
+              <a
+                href="https://www.instagram.com/diu_sec/"
+                className="transition hover:text-white"
+                target="blank"
+              >
                 Instagram
               </a>
-              <a href="#" className="transition hover:text-white">
-                Twitter
+              <a
+                href="https://www.facebook.com/secdiu"
+                className="transition hover:text-white"
+                target="blank"
+              >
+                Facebook
               </a>
             </div>
           </div>

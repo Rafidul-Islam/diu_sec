@@ -102,9 +102,12 @@ export default function WingPage() {
                   key={member.name}
                   className="rounded-3xl bg-slate-50 px-4 py-3 dark:bg-slate-800"
                 >
-                  <p className="font-semibold text-slate-950 dark:text-white">
+                  <a
+                    href={member.profile}
+                    className="font-semibold text-slate-950 dark:text-white"
+                  >
                     {member.name}
-                  </p>
+                  </a>
                   {member.position && (
                     <p className="text-sm text-slate-600 dark:text-slate-400">
                       {member.position}

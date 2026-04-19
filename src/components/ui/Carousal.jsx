@@ -60,7 +60,7 @@ const DEFAULT_ITEMS = [
     title: "What We Do",
     description:
       "We organize workshops, hackathons, and team projects to help members gain real-world skills and hands-on experience.",
-    bgImage: "/grp-2.jpg",
+    bgImage: "/grp-3.jpg",
 
     id: 3,
     icon: <FiLayers className="h-[16px] w-[16px] text-white" />,
@@ -69,7 +69,7 @@ const DEFAULT_ITEMS = [
     title: "Our Vision",
     description:
       "Our vision is to build a strong tech community that inspires innovation and prepares students for future careers.",
-    bgImage: "/grp-2.jpg",
+    bgImage: "/grp-4.jpg",
 
     id: 4,
     icon: <FiLayout className="h-[16px] w-[16px] text-white" />,

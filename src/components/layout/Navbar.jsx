@@ -7,8 +7,8 @@ const menuItems = [
   { label: "Magazine", href: "/magazine", type: "route" },
   { label: "Wings", href: "wings", type: "section" },
   { label: "Events", href: "activities", type: "section" },
-  { label: "Team", href: "achievements", type: "section" },
-  { label: "Gallery", href: "cta", type: "section" },
+  // { label: "Team", href: "achievements", type: "section" },
+  // { label: "Gallery", href: "cta", type: "section" },
   { label: "Contact", href: "footer", type: "section" },
 ];
 
