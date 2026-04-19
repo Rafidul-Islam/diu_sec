@@ -7,7 +7,7 @@ import page5 from "../../assets/DIU_SEC_Magazine/5.jpg";
 
 export default function MyBook(props) {
   return (
-    <HTMLFlipBook width={500} height={800}>
+    <HTMLFlipBook width={400} height={800}>
       <div className="demoPage ">
         <img src={page1} alt="" />
       </div>
