@@ -1,13 +1,13 @@
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useState } from "react";
-import logo from "../../assets/diusec.jpg";
+import logo from "../../../public/diusec.jpg";
 
 const menuItems = [
   { label: "Home", href: "/", type: "route" },
   { label: "Magazine", href: "/magazine", type: "route" },
   { label: "Wings", href: "wings", type: "section" },
   { label: "Events", href: "activities", type: "section" },
-  // { label: "Team", href: "achievements", type: "section" },
+  { label: "Team", href: "team", type: "section" },
   // { label: "Gallery", href: "cta", type: "section" },
   { label: "Contact", href: "footer", type: "section" },
 ];

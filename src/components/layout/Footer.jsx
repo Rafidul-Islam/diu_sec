@@ -1,6 +1,6 @@
 import { wings } from "../../data/clubData";
 import { Link } from "react-router-dom";
-import logo from "../../assets/diusec.jpg";
+import logo from "../../../public/diusec.jpg";
 import { FaHeart } from "react-icons/fa";
 
 export default function Footer() {

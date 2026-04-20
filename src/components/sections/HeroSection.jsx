@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
-import MagazineViewer from "../ui/MagazineViewer";
 import CardSwap, { Card } from "../ui/CardSwap";
-import TiltedCa2d from "../ui/TitledCard";
 import page1 from "../../assets/DIU_SEC_Magazine/Typing Titan-Meraj.jpg";
 import page2 from "../../assets/DIU_SEC_Magazine/Iftar-Meraj.jpg";
 import page3 from "../../assets/DIU_SEC_Magazine/get together-Meraj.jpg";
