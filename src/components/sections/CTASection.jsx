@@ -26,7 +26,7 @@ export default function CTASection() {
               Apply Now
             </Link>
             <a
-              href="/#footer"
+              href="mailto:diusec.edu.bd"
               className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-8 py-3 text-base font-semibold text-white transition hover:bg-white/20"
             >
               Contact Us
