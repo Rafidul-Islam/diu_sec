@@ -72,7 +72,7 @@ const teamData = {
   ],
   secretaries: [
     {
-      name: "Sayed Roman",
+      name: "Sayed Ruman",
       role: "General Secretary",
       image: "/public/teamImg/sayed-roman.jpg",
     },

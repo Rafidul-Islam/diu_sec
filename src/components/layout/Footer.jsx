@@ -1,6 +1,6 @@
 import { wings } from "../../data/clubData";
 import { Link } from "react-router-dom";
-import logo from "../../../public/diusec.jpg";
+import logo from "/diusec.jpg";
 import { FaHeart } from "react-icons/fa";
 
 export default function Footer() {
@@ -98,8 +98,8 @@ export default function Footer() {
               <span className="hidden sm:inline"> • </span>
               <br className="sm:hidden" />
               Developed with <FaHeart className="inline text-red-500" /> by{" "}
-              <a target="blank" href="https://rafidul-islam.netlify.app/">
-                <u className="text-xl"> Rafid</u>
+              <a target="blank" href="https://www.instagram.com/benerdagain/">
+                <u className="text-xl"> benerdagain</u>
               </a>
             </p>
 

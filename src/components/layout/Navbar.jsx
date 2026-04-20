@@ -1,6 +1,6 @@
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useState } from "react";
-import logo from "../../../public/diusec.jpg";
+import logo from "/diusec.jpg";
 
 const menuItems = [
   { label: "Home", href: "/", type: "route" },

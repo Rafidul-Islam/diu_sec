@@ -165,11 +165,11 @@ export const recentActivities = [
     image: "iftar.jpg",
   },
   {
-    title: "Covocation 2026",
+    title: "Club Get Together",
     description:
-      "The DIU Software Engineering Club warmly congratulates all the graduates of Daffodil International University on the occasion of its 13th Convocation.",
-    date: "January 2026",
-    image: "convo.jpg",
+      "From meaningful conversations to shared ideas and future plans, every moment reflected the spirit of collaboration that defines our club.",
+    date: "November 2025",
+    image: "get-together.jpg",
   },
 ];
 
