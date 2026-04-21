@@ -28,12 +28,12 @@ export default function Magazine() {
             >
               Open Latest Issue
             </a>
-            <a
+            {/* <a
               href="#archive"
-              className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-6 py-3 text-base font-semibold text-slate-950 transition hover:border-slate-300 dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:hover:border-slate-600"
+              className="inline-flex items-center justify-center rounded-full border border-slate-200 px-6 py-3 text-base font-semibold text-white transition hover:border-slate-300 dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:hover:border-slate-600"
             >
               See Archive
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="rounded-[2rem] bg-slate-950/95 p-6 text-white shadow-soft dark:bg-slate-900">

@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 const stats = [
   { label: "Members", value: "500+" },
-  { label: "Magazine Issues", value: "12" },
+  { label: "Seminars", value: "50+" },
   { label: "Events", value: "20+" },
-  { label: "National Awards", value: "5" },
+  { label: "National Awards", value: "5+" },
 ];
 
 export default function AchievementsSection() {
