@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import AboutSection from "../components/sections/AboutSection";
 import AchievementsSection from "../components/sections/AchievementsSection";
 import CTASection from "../components/sections/CTASection";
@@ -8,6 +9,19 @@ import VisionMissionSection from "../components/sections/VisionMissionSection";
 import WingsSection from "../components/sections/WingsSection";
 
 export default function Home() {
+  useEffect(() => {
+    // Handle hash navigation on page load
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+      const el = document.getElementById(hash);
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 100);
+      }
+    }
+  }, []);
+
   return (
     <>
       <HeroSection />

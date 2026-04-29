@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import CardSwap, { Card } from "../ui/CardSwap";
-import page1 from "/mag/1.jpg";
-import page21 from "/mag/21.jpg";
-import page23 from "/mag/23.jpg";
-import page35 from "/mag/35.jpg";
+import page1 from "/mag/SWEOrbit  e-Magazine.jpg";
+import page2 from "/mag/e-mag_1.jpg";
+import page22 from "/mag/e-mag_22.jpg";
+import page24 from "/mag/e-mag_24.jpg";
+import page36 from "/mag/e-mag_36.jpg";
 
 export default function HeroSection() {
   return (
@@ -24,13 +25,16 @@ export default function HeroSection() {
                 <img src={page1} alt="" />
               </Card>
               <Card>
-                <img src={page21} alt="" />
+                <img src={page2} alt="" />
               </Card>
               <Card>
-                <img src={page23} alt="" />
+                <img src={page22} alt="" />
               </Card>
               <Card>
-                <img src={page35} alt="" />
+                <img src={page24} alt="" />
+              </Card>
+              <Card>
+                <img src={page36} alt="" />
               </Card>
             </CardSwap>
           </div>
@@ -69,9 +73,9 @@ export default function HeroSection() {
               Read Latest Magazine
             </Link>
             <a
-              href="public/mag/endurance-1.pdf"
+              href="public/mag/SWEOrbit  e-Magazine.pdf"
               className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-4 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base font-semibold text-white transition hover:bg-white/15 sm:w-auto"
-              download={"/public/mag/endurance-1.pdf"}
+              download={"public/mag/SWEOrbit  e-Magazine.pdf"}
             >
               Download PDF
             </a>
@@ -110,13 +114,16 @@ export default function HeroSection() {
                 <img src={page1} alt="" />
               </Card>
               <Card>
-                <img src={page21} alt="" />
+                <img src={page2} alt="" />
               </Card>
               <Card>
-                <img src={page23} alt="" />
+                <img src={page22} alt="" />
               </Card>
               <Card>
-                <img src={page35} alt="" />
+                <img src={page24} alt="" />
+              </Card>
+              <Card>
+                <img src={page36} alt="" />
               </Card>
             </CardSwap>
           </div>

@@ -15,7 +15,7 @@ const menuItems = [
 const scrollToSection = (sectionId) => {
   const el = document.getElementById(sectionId);
   if (el) {
-    el.scrollIntoView({ behavior: "smooth" });
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 };
 
@@ -29,13 +29,8 @@ export default function Navbar() {
     if (item.type === "route") {
       navigate(item.href);
     } else {
-      // If already on home, just scroll. Otherwise go home then scroll.
-      if (location.pathname === "/") {
-        scrollToSection(item.href);
-      } else {
-        navigate("/");
-        setTimeout(() => scrollToSection(item.href), 100);
-      }
+      // Navigate to home with hash for the section
+      navigate(`/#${item.href}`);
     }
   };
 
