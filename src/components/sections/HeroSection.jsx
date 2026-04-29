@@ -73,9 +73,9 @@ export default function HeroSection() {
               Read Latest Magazine
             </Link>
             <a
-              href="public/mag/e-Magazine.pdf"
+              href="/mag/e-Magazine.pdf"
               className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-4 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base font-semibold text-white transition hover:bg-white/15 sm:w-auto"
-              download={"public/mag/e-Magazine.pdf"}
+              download="e-Magazine.pdf"
             >
               Download PDF
             </a>
