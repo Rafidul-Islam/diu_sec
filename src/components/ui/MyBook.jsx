@@ -36,7 +36,6 @@ import page32 from "/mag/e-mag_32.jpg";
 import page33 from "/mag/e-mag_33.jpg";
 import page34 from "/mag/e-mag_34.jpg";
 import page35 from "/mag/e-mag_35.jpg";
-import page36 from "/mag/e-mag_36.jpg";
 
 const pages = [
   page0,
@@ -75,7 +74,6 @@ const pages = [
   page33,
   page34,
   page35,
-  page36,
 ];
 
 export default function MyBook(props) {
