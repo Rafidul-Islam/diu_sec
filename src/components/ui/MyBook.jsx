@@ -1,6 +1,7 @@
 import HTMLFlipBook from "react-pageflip";
 
 import page0 from "/mag/SWEOrbit  e-Magazine.jpg";
+import pageExtra from "/mag/e-mag_extra.jpg";
 import page1 from "/mag/e-mag_1.jpg";
 import page2 from "/mag/e-mag_2.jpg";
 import page3 from "/mag/e-mag_3.jpg";
@@ -42,6 +43,7 @@ const pages = [
   page1,
   page2,
   page3,
+  pageExtra,
   page4,
   page5,
   page6,
