@@ -16,7 +16,7 @@ const teamData = {
       image: "/teamImg/rajib-mia.jpg",
     },
   ],
-  leadership: [
+  convenors: [
     {
       name: "Izaz Ahmmed Tuhin",
       role: "Convenor",
@@ -37,13 +37,13 @@ const teamData = {
       role: "Mentor",
       image: "/teamImg/fazla-rabby-raihan.jpg",
     },
+  ],
+  leadership: [
     {
       name: "Md. Abdul Alim",
       role: "President",
       image: "/teamImg/abdul-alim.jpg",
     },
-  ],
-  vicePresidents: [
     {
       name: "Simanta Kumar Roy",
       role: "Vice President",
@@ -387,11 +387,11 @@ export default function TeamSection() {
           </div>
         </div>
 
-        {/* Core Leadership */}
+        {/* Core convenors */}
         <div className="flex flex-col gap-4">
-          <SectionDivider label="Core Leadership" />
+          <SectionDivider label="Convenors & Mentors" />
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
-            {teamData.leadership.map((m, i) => (
+            {teamData.convenors.map((m, i) => (
               <LeaderCard key={i} member={m} index={i + 2} />
             ))}
           </div>
@@ -399,9 +399,9 @@ export default function TeamSection() {
 
         {/* Vice Presidents */}
         <div className="flex flex-col gap-4">
-          <SectionDivider label="Vice Presidents" />
+          <SectionDivider label="Core Leadership" />
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
-            {teamData.vicePresidents.map((m, i) => (
+            {teamData.leadership.map((m, i) => (
               <VPCard key={i} member={m} index={i + 7} />
             ))}
           </div>
