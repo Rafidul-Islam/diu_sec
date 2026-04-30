@@ -74,13 +74,13 @@ const teamData = {
       dept: "Research & Publications",
       image: "/teamImg/mahfuzur-rahman-shanto.jpg",
     },
-  ],
-  secretaries: [
     {
       name: "Sayed Ruman",
       role: "General Secretary",
       image: "/teamImg/sayed-roman.jpg",
     },
+  ],
+  secretaries: [
     {
       name: "Md. Mahadi Hasan",
       role: "Joint Secretary",
