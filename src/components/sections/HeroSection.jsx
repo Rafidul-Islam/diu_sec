@@ -4,7 +4,7 @@ import page1 from "/mag/SWEOrbit  e-Magazine.jpg";
 import page2 from "/mag/e-mag_1.jpg";
 import page22 from "/mag/e-mag_22.jpg";
 import page24 from "/mag/e-mag_24.jpg";
-import page36 from "/mag/e-mag_36.jpg";
+import page35 from "/mag/e-mag_35.jpg";
 
 export default function HeroSection() {
   return (
@@ -34,7 +34,7 @@ export default function HeroSection() {
                 <img src={page24} alt="" />
               </Card>
               <Card>
-                <img src={page36} alt="" />
+                <img src={page35} alt="" />
               </Card>
             </CardSwap>
           </div>
@@ -123,7 +123,7 @@ export default function HeroSection() {
                 <img src={page24} alt="" />
               </Card>
               <Card>
-                <img src={page36} alt="" />
+                <img src={page35} alt="" />
               </Card>
             </CardSwap>
           </div>
