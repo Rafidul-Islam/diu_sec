@@ -45,6 +45,22 @@ const teamData = {
       image: "/teamImg/abdul-alim.jpg",
     },
     {
+      name: "Md Shahriar Rashid Rahi",
+      role: "Vice President",
+      dept: "General",
+      image: "/teamImg/shahriar-rashid-rahi.jpg",
+    },
+    {
+      name: "Sayed Ruman",
+      role: "General Secretary",
+      image: "/teamImg/sayed-roman.jpg",
+    },
+    {
+      name: "Md Imran Tarafdar",
+      role: "Treasurer",
+      image: "/teamImg/imran-tarafdar.jpg",
+    },
+    {
       name: "Simanta Kumar Roy",
       role: "Vice President",
       dept: "Design & Development",
@@ -56,12 +72,7 @@ const teamData = {
       dept: "ACM",
       image: "/teamImg/piyash-basak.jpg",
     },
-    {
-      name: "Md Shahriar Rashid Rahi",
-      role: "Vice President",
-      dept: "General",
-      image: "/teamImg/shahriar-rashid-rahi.jpg",
-    },
+
     {
       name: "MD Walliul Islam Nohan",
       role: "Vice President",
@@ -73,11 +84,6 @@ const teamData = {
       role: "Vice President",
       dept: "Research & Publications",
       image: "/teamImg/mahfuzur-rahman-shanto.jpg",
-    },
-    {
-      name: "Sayed Ruman",
-      role: "General Secretary",
-      image: "/teamImg/sayed-roman.jpg",
     },
   ],
   secretaries: [
@@ -96,11 +102,7 @@ const teamData = {
       role: "Development Secretary",
       image: "/teamImg/jahidul-hassan-reshad.jpg",
     },
-    {
-      name: "Md Imran Tarafdar",
-      role: "Treasurer",
-      image: "/teamImg/imran-tarafdar.jpg",
-    },
+
     {
       name: "Md. Eusha Hasan",
       role: "ACM Secretary",
