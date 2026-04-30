@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import AboutSection from "../components/sections/AboutSection";
 import AchievementsSection from "../components/sections/AchievementsSection";
 import CTASection from "../components/sections/CTASection";
@@ -9,18 +10,26 @@ import VisionMissionSection from "../components/sections/VisionMissionSection";
 import WingsSection from "../components/sections/WingsSection";
 
 export default function Home() {
+  const location = useLocation();
+
   useEffect(() => {
-    // Handle hash navigation on page load
-    const hash = window.location.hash.substring(1);
-    if (hash) {
-      const el = document.getElementById(hash);
-      if (el) {
-        setTimeout(() => {
-          el.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 100);
-      }
+    if (location.pathname !== "/") return;
+
+    const hash = location.hash.replace("#", "");
+    if (!hash) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
     }
-  }, []);
+
+    const el = document.getElementById(hash);
+    if (!el) return;
+
+    const timeout = setTimeout(() => {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 100);
+
+    return () => clearTimeout(timeout);
+  }, [location.pathname, location.hash]);
 
   return (
     <>

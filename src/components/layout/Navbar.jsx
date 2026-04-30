@@ -28,10 +28,16 @@ export default function Navbar() {
     setOpen(false);
     if (item.type === "route") {
       navigate(item.href);
-    } else {
-      // Navigate to home with hash for the section
-      navigate(`/#${item.href}`);
+      return;
     }
+
+    const hash = `#${item.href}`;
+    if (location.pathname === "/" && location.hash === hash) {
+      scrollToSection(item.href);
+      return;
+    }
+
+    navigate({ pathname: "/", hash });
   };
 
   return (
