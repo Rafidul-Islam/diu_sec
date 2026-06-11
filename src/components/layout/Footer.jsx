@@ -98,8 +98,8 @@ export default function Footer() {
               <span className="hidden sm:inline"> • </span>
               <br className="sm:hidden" />
               Developed with <FaHeart className="inline text-red-500" /> by{" "}
-              <a target="blank" href="https://www.instagram.com/benerdagain/">
-                <u className="text-xl"> benerdagain</u>
+              <a target="blank" href="https://www.instagram.com/rafinnaaaaa/">
+                <u className="text-xl"> Rafidul Islam </u>
               </a>
             </p>
 

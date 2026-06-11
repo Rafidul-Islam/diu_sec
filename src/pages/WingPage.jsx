@@ -9,6 +9,29 @@ export default function WingPage() {
     [wingId],
   );
   const details = wingDetails[wingId];
+  const allMembers = details?.members ?? [];
+  const getPositionRank = (position = "") => {
+    const p = position.toLowerCase();
+    if (p.includes("secretary")) return 0;
+    if (p.includes("deputy")) return 1;
+    if (p.includes("senior executive")) return 2;
+    if (p.includes("executive")) return 3;
+    return 4;
+  };
+  const sortedMembers = [...allMembers].sort((a, b) => {
+    const rankDiff = getPositionRank(a.position) - getPositionRank(b.position);
+    if (rankDiff !== 0) return rankDiff;
+    return (a.name || "").localeCompare(b.name || "");
+  });
+  const secretaryMembers = sortedMembers.filter((member) =>
+    /secretary/i.test(member.position || ""),
+  );
+  const deputyMembers = sortedMembers.filter((member) =>
+    /deputy/i.test(member.position || ""),
+  );
+  const executiveMembers = sortedMembers.filter((member) =>
+    /executive/i.test(member.position || ""),
+  );
 
   if (!wing || !details) {
     return (
@@ -96,30 +119,150 @@ export default function WingPage() {
             <h3 className="text-2xl font-semibold text-slate-950 dark:text-white">
               Team Members
             </h3>
-            <div className="mt-5 space-y-3 text-slate-600 dark:text-slate-400">
-              {details.members.map((member) => (
-                <div
-                  key={member.name}
-                  className="rounded-3xl bg-slate-50 px-4 py-3 dark:bg-slate-800"
-                >
-                  <a
-                    href={member.profile}
-                    className="font-semibold text-slate-950 dark:text-white"
-                  >
-                    {member.name}
-                  </a>
-                  {member.position && (
-                    <p className="text-sm text-slate-600 dark:text-slate-400">
-                      {member.position}
-                    </p>
-                  )}
-                  {member.batch && (
-                    <p className="text-xs text-slate-500 dark:text-slate-500">
-                      {member.batch}
-                    </p>
-                  )}
+            <div className="mt-5 space-y-6 text-slate-600 dark:text-slate-400">
+              {secretaryMembers.length > 0 && (
+                <div>
+                  <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-sky-600 dark:text-sky-400">
+                    Secretary
+                  </p>
+                  <div className="space-y-3">
+                    {secretaryMembers.map((member) => (
+                      <div
+                        key={member.name}
+                        className="rounded-3xl bg-slate-50 px-4 py-3 dark:bg-slate-800"
+                      >
+                        <a
+                          href={member.profile}
+                          className="font-semibold text-slate-950 dark:text-white"
+                        >
+                          {member.name}
+                        </a>
+                        {member.position && (
+                          <p className="text-sm text-slate-600 dark:text-slate-400">
+                            {member.position}
+                          </p>
+                        )}
+                        {member.batch && (
+                          <p className="text-xs text-slate-500 dark:text-slate-500">
+                            {member.batch}
+                          </p>
+                        )}
+                        {member.studentId && (
+                          <p className="text-xs text-slate-500 dark:text-slate-500">
+                            ID: {member.studentId}
+                          </p>
+                        )}
+                        {member.email && (
+                          <p className="text-xs text-slate-500 dark:text-slate-500">
+                            {member.email}
+                          </p>
+                        )}
+                        {member.contact && (
+                          <p className="text-xs text-slate-500 dark:text-slate-500">
+                            {member.contact}
+                          </p>
+                        )}
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              ))}
+              )}
+
+              {deputyMembers.length > 0 && (
+                <div>
+                  <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-sky-600 dark:text-sky-400">
+                    Deputy Secretary
+                  </p>
+                  <div className="space-y-3">
+                    {deputyMembers.map((member) => (
+                      <div
+                        key={member.name}
+                        className="rounded-3xl bg-slate-50 px-4 py-3 dark:bg-slate-800"
+                      >
+                        <a
+                          href={member.profile}
+                          className="font-semibold text-slate-950 dark:text-white"
+                        >
+                          {member.name}
+                        </a>
+                        {member.position && (
+                          <p className="text-sm text-slate-600 dark:text-slate-400">
+                            {member.position}
+                          </p>
+                        )}
+                        {member.batch && (
+                          <p className="text-xs text-slate-500 dark:text-slate-500">
+                            {member.batch}
+                          </p>
+                        )}
+                        {member.studentId && (
+                          <p className="text-xs text-slate-500 dark:text-slate-500">
+                            ID: {member.studentId}
+                          </p>
+                        )}
+                        {member.email && (
+                          <p className="text-xs text-slate-500 dark:text-slate-500">
+                            {member.email}
+                          </p>
+                        )}
+                        {member.contact && (
+                          <p className="text-xs text-slate-500 dark:text-slate-500">
+                            {member.contact}
+                          </p>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {executiveMembers.length > 0 && (
+                <div>
+                  <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-sky-600 dark:text-sky-400">
+                    Executives
+                  </p>
+                  <div className="space-y-3">
+                    {executiveMembers.map((member) => (
+                      <div
+                        key={member.name}
+                        className="rounded-3xl bg-slate-50 px-4 py-3 dark:bg-slate-800"
+                      >
+                        <a
+                          href={member.profile}
+                          className="font-semibold text-slate-950 dark:text-white"
+                        >
+                          {member.name}
+                        </a>
+                        {member.position && (
+                          <p className="text-sm text-slate-600 dark:text-slate-400">
+                            {member.position}
+                          </p>
+                        )}
+                        {member.batch && (
+                          <p className="text-xs text-slate-500 dark:text-slate-500">
+                            {member.batch}
+                          </p>
+                        )}
+                        {member.studentId && (
+                          <p className="text-xs text-slate-500 dark:text-slate-500">
+                            ID: {member.studentId}
+                          </p>
+                        )}
+                        {member.email && (
+                          <p className="text-xs text-slate-500 dark:text-slate-500">
+                            {member.email}
+                          </p>
+                        )}
+                        {member.contact && (
+                          <p className="text-xs text-slate-500 dark:text-slate-500">
+                            {member.contact}
+                          </p>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
           <div className="rounded-[2rem] border border-slate-200/80 bg-white p-8 shadow-soft dark:border-slate-700/80 dark:bg-slate-900">

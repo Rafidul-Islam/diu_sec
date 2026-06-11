@@ -1,4 +1,4 @@
-  import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useState } from "react";
 import logo from "/diusec.jpg";
 
@@ -7,7 +7,7 @@ const menuItems = [
   { label: "Magazine", href: "/magazine", type: "route" },
   { label: "Wings", href: "wings", type: "section" },
   { label: "Events", href: "activities", type: "section" },
-  { label: "Team", href: "team", type: "section" },
+  { label: "Committee", href: "team", type: "section" },
   // { label: "Gallery", href: "cta", type: "section" },
   { label: "Contact", href: "footer", type: "section" },
 ];
